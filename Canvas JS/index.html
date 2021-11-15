@@ -1,0 +1,97 @@
+<html>
+    
+    <head>
+
+    </head>
+
+    <body>    
+
+        <canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000; background-color: lightblue;">
+        
+        </canvas>
+
+        <script>
+            //damian en jari's prachtige stad (samen gemaakt in de les 15/11/21)
+
+            //variabelen maken
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            //5 gebouwen maken
+            ctx.fillStyle = "#808080";
+            ctx.fillRect(30,300,70,300);
+            ctx.fillRect(150,400,70,200);
+            ctx.fillRect(400,300,70,300);
+            ctx.fillRect(500,500,70,100);
+            ctx.fillRect(600,400,70,200);
+           
+            //ramen maken
+            ctx.fillStyle = "#bfc9ca";
+            ctx.fillRect(40,500,20,20)
+            ctx.fillRect(70,500,20,20)
+            ctx.fillRect(40,530,20,20)
+            ctx.fillRect(70,530,20,20)
+
+            ctx.fillRect(160,530,20,20)
+            ctx.fillRect(190,530,20,20)
+
+            ctx.fillRect(410,400,20,20)
+            ctx.fillRect(440,400,20,20)
+            ctx.fillRect(410,430,20,20)
+            ctx.fillRect(440,430,20,20)
+
+            ctx.fillRect(510,530,20,20)
+            ctx.fillRect(510,560,20,20)
+            
+            ctx.fillRect(610,500,20,20)
+            ctx.fillRect(640,500,20,20)
+            ctx.fillRect(610,530,20,20)
+            ctx.fillRect(640,530,20,20)
+            
+            //auto maken
+            ctx.fillStyle = "#c0392b";
+            ctx.fillRect(250,575,30,15)
+
+            //wielen maken
+            ctx.beginPath();
+            ctx.arc(255, 592, 8, 0, 2 * Math.PI);
+            ctx.fillStyle = "#000000";
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.arc(275, 592, 8, 0, 2 * Math.PI);
+            ctx.fill();
+
+            //zon (totaal veilig, absoluut niet te dicht bij aarde)
+            ctx.beginPath();
+            ctx.arc(100, 100, 100, 0, 2 * Math.PI);
+            ctx.fillStyle = "#f1c40f";
+            ctx.fill();
+
+            //gras
+            ctx.fillStyle = "#28b463";
+            ctx.fillRect(0,598,800,2)
+
+            //boom
+            ctx.fillStyle = "#6e2c00";
+            ctx.fillRect(330,580,10,20)
+
+            ctx.beginPath();
+            ctx.arc(335, 560, 20, 0, 2 * Math.PI);
+            ctx.fillStyle = "#28b463";
+            ctx.fill();
+
+            //hele mooie boom, maar elke boom heeft een vriend nodig (boom 2)
+            ctx.fillStyle = "#6e2c00";
+            ctx.fillRect(430,580,10,20)
+
+            ctx.beginPath();
+            ctx.arc(435, 560, 20, 0, 2 * Math.PI);
+            ctx.fillStyle = "#28b463";
+            ctx.fill();
+        </script>
+
+    </body>
+
+
+</html>
